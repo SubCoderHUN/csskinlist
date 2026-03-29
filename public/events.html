@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Napi Eventek – NexxoN CS:GO</title>
+  <meta name="description" content="NexxoN CS:GO szerver heti event naptár – minden nap különleges esemény!" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>CS:GO<span>/HUN</span><span class="logo-bracket">]</span>&nbsp;NexxoN
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">🏠 Főoldal</a></li>
+    <li><a href="events.html" class="active">📅 Napi Eventek</a></li>
+    <li><a href="bans.html">🔨 Banlista</a></li>
+    <li><a href="https://discord.gg/2Y6CSsPspF" target="_blank" rel="noopener">💬 Discord</a></li>
+    <li><a href="steam://connect/connect" class="nav-connect-btn">▶ Csatlakozás</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Főoldal</a>
+          <span class="sep">/</span>
+          <span class="current">Napi Eventek</span>
+        </div>
+        <h1 class="page-hero-title">📅 Napi Eventek</h1>
+        <p class="page-hero-desc">Szinte minden nap egy különleges event vár a szerveren. Válaszd ki a napot és tudj meg többet!</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Week navigator -->
+      <div class="week-nav">
+        <button class="week-nav-btn" id="prevWeek" title="Előző hét">&#8592;</button>
+        <div class="week-label" id="weekLabel">Betöltés...</div>
+        <button class="week-nav-btn" id="nextWeek" title="Következő hét">&#8594;</button>
+      </div>
+
+      <!-- Day cards grid -->
+      <div class="days-grid" id="daysGrid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Event detail panel -->
+      <div class="event-detail-panel" id="eventDetail">
+        <!-- Rendered by JS -->
+      </div>
+
+      <hr class="neon-line" style="margin: 3rem 0;" />
+
+      <!-- Upcoming events list -->
+      <div class="section-header" style="margin-bottom: 1.5rem; text-align: left;">
+        <span class="section-tag">Ezen a héten</span>
+        <h2 class="section-title" style="font-size: 1.4rem;">Közelgő eventek</h2>
+      </div>
+
+      <div class="upcoming-list" id="upcomingList">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:0.75rem;">
+          <span class="logo-bracket">[</span>CS:GO<span>/HUN</span><span class="logo-bracket">]</span>&nbsp;NexxoN
+        </div>
+        <p class="footer-desc">Magyar CS:GO AWP közösségi szerver. Csatlakozz te is!</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigáció</div>
+        <ul class="footer-links">
+          <li><a href="index.html">🏠 Főoldal</a></li>
+          <li><a href="events.html">📅 Napi Eventek</a></li>
+          <li><a href="bans.html">🔨 Banlista</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Közösség</div>
+        <ul class="footer-links">
+          <li><a href="https://discord.gg/2Y6CSsPspF" target="_blank" rel="noopener">💬 Discord szerver</a></li>
+          <li><a href="steam://connect/connect">▶ Csatlakozás</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 [CS:GO/HUN]NexxoN. Minden jog fenntartva.</span>
+      <span>Készítve <span class="heart">❤</span> a magyar CS:GO közösségnek</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>
