@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[CS:GO/HUN]NexxoN – AWP Szerver</title>
-  <meta name="description" content="Magyar CS:GO AWP közösségi szerver. 128 tick, egyedi skinrendszer, napi eventek." />
+  <title>[CS:GO/HUN]NexxoN – AWP &amp; Paintball Szerver</title>
+  <meta name="description" content="Magyar CS:GO közösségi szerverek: AWP és Paintball. 128 tick, egyedi skinrendszer, napi eventek." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
 </head>
@@ -23,7 +23,7 @@
     <li><a href="events.html">📅 Napi Eventek</a></li>
     <li><a href="bans.html">🔨 Banlista</a></li>
     <li><a href="https://discord.gg/2Y6CSsPspF" target="_blank" rel="noopener">💬 Discord</a></li>
-    <li><a href="steam://connect/connect" class="nav-connect-btn">▶ Csatlakozás</a></li>
+    <li><a href="steam://connect/nexxon.ddns.net:27030" class="nav-connect-btn">▶ Csatlakozás</a></li>
   </ul>
 </nav>
 
@@ -53,7 +53,7 @@
         <p class="hero-sub">Egyedi skinrendszer &nbsp;·&nbsp; Napi eventek &nbsp;·&nbsp; Aktív közösség</p>
 
         <div class="hero-actions">
-          <a href="steam://connect/connect" class="btn btn-primary btn-lg">
+          <a href="steam://connect/nexxon.ddns.net:27030" class="btn btn-primary btn-lg">
             ▶&nbsp; Csatlakozás a szerverhez
           </a>
           <a href="https://discord.gg/2Y6CSsPspF" target="_blank" rel="noopener" class="btn btn-discord btn-lg">
@@ -83,6 +83,95 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <hr class="neon-line" />
+
+  <!-- SZERVEREINK -->
+  <section class="section" id="szerverek">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Szervereink</span>
+        <h2 class="section-title">Válaszd ki a <span class="highlight">szervered</span>!</h2>
+        <p class="section-desc">Két különböző játékmód, egy közösség. Mindkét szerver 128 ticken fut, tele egyedi funkciókkal.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="servers-grid">
+
+        <!-- AWP Server -->
+        <div class="server-card server-card--awp">
+          <div class="server-card-accent"></div>
+          <div class="server-card-inner">
+            <div class="server-card-top">
+              <div>
+                <div class="server-mode-badge server-mode-badge--awp">AWP SZERVER</div>
+                <h3 class="server-name">[CS:GO/HUN] NexxoN <span>— AWP</span></h3>
+              </div>
+              <div class="server-tick-badge">128<span>tick</span></div>
+            </div>
+
+            <div class="server-ip-row">
+              <span class="server-ip-label">IP&nbsp;/&nbsp;Cím</span>
+              <code class="server-ip-value" id="awpIp">nexxon.ddns.net:27030</code>
+              <button class="server-ip-copy" onclick="copyIp('awpIp', this)" title="Másolás">📋</button>
+            </div>
+
+            <div class="server-features-row">
+              <span class="server-feat">!ws</span>
+              <span class="server-feat">!knife</span>
+              <span class="server-feat">!glove</span>
+              <span class="server-feat">!store</span>
+              <span class="server-feat server-feat--highlight">128 tick</span>
+            </div>
+
+            <p class="server-desc">
+              Precíz AWP csaták, egyedi fegyver- és késszkinekkel. Az igazi mesterlövész élmény napi eventekkel és aktív közösséggel.
+            </p>
+
+            <a href="steam://connect/nexxon.ddns.net:27030" class="btn btn-primary server-connect-btn">
+              ▶&nbsp; Csatlakozás az AWP szerverhez
+            </a>
+          </div>
+        </div>
+
+        <!-- Paintball Server -->
+        <div class="server-card server-card--paintball">
+          <div class="server-card-accent"></div>
+          <div class="server-card-inner">
+            <div class="server-card-top">
+              <div>
+                <div class="server-mode-badge server-mode-badge--paintball">PAINTBALL SZERVER</div>
+                <h3 class="server-name">[CS:GO/HUN] NexxoN <span>— PAINTBALL</span></h3>
+              </div>
+              <div class="server-tick-badge server-tick-badge--green">128<span>tick</span></div>
+            </div>
+
+            <div class="server-ip-row">
+              <span class="server-ip-label">IP&nbsp;/&nbsp;Cím</span>
+              <code class="server-ip-value" id="pbIp">nexxon.ddns.net:27015</code>
+              <button class="server-ip-copy" onclick="copyIp('pbIp', this)" title="Másolás">📋</button>
+            </div>
+
+            <div class="server-features-row">
+              <span class="server-feat server-feat--green">!ws</span>
+              <span class="server-feat server-feat--green">!glove</span>
+              <span class="server-feat server-feat--green">!store</span>
+              <span class="server-feat server-feat--highlight server-feat--green-hl">128 tick</span>
+            </div>
+
+            <p class="server-desc">
+              Színes, gyors tempójú Paintball játékmód egyedi skinekkel és store rendszerrel. Tökéletes választás, ha valami másra vágysz!
+            </p>
+
+            <a href="steam://connect/nexxon.ddns.net:27015" class="btn btn-primary-green server-connect-btn">
+              ▶&nbsp; Csatlakozás a Paintball szerverhez
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /servers-grid -->
     </div>
   </section>
 
@@ -205,7 +294,7 @@
         <div class="feature-card" style="text-align:left;">
           <span class="feature-icon" style="font-size:1.8rem;">3️⃣</span>
           <div class="feature-title" style="margin-top:0.5rem;">Keresd a NexxoN-t</div>
-          <div class="feature-desc">Keressd a <strong>"NexxoN AWP"</strong> nevet, vagy adj hozzá IP cím alapján.</div>
+          <div class="feature-desc">Keressd a <strong>"NexxoN AWP"</strong> vagy <strong>"NexxoN Paintball"</strong> nevet, vagy adj hozzá IP cím alapján a szerver kártyán látható IP-vel.</div>
         </div>
         <div class="feature-card" style="text-align:left;">
           <span class="feature-icon" style="font-size:1.8rem;">4️⃣</span>
@@ -243,7 +332,7 @@
         <div class="footer-col-title">Közösség</div>
         <ul class="footer-links">
           <li><a href="https://discord.gg/2Y6CSsPspF" target="_blank" rel="noopener">💬 Discord szerver</a></li>
-          <li><a href="steam://connect/connect">▶ Csatlakozás</a></li>
+          <li><a href="steam://connect/nexxon.ddns.net:27030">▶ Csatlakozás</a></li>
         </ul>
       </div>
     </div>
@@ -255,5 +344,15 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+function copyIp(elementId, btn) {
+  const text = document.getElementById(elementId).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✅';
+    setTimeout(() => { btn.textContent = orig; }, 1500);
+  });
+}
+</script>
 </body>
 </html>
