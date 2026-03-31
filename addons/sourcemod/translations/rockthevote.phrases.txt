@@ -1,0 +1,23 @@
+"Phrases"
+{
+	"RTV Ended"
+	{
+		"en"		"Map voting has already concluded."
+	}
+
+	"No Votes"
+	{
+		"en"		"No votes received, keeping current map."
+	}
+
+	"Current Map Stays"
+	{
+		"en"		"Current map continues! The vote has spoken!"
+	}
+
+	"Changing Maps"
+	{
+		"#format"	"{1:s}"
+		"en"		"Changing map to {1}!"
+	}
+}
