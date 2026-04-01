@@ -26,6 +26,8 @@ else:
 project.sources += sourceFiles
 project.sources += [os.path.join(Extension.sm_root, 'public', 'CDetour', "detours.cpp")]
 project.sources += [os.path.join(Extension.sm_root, 'public', 'asm', "asm.c")]
+for smfile in ['udis86.c', 'decode.c', 'itab.c', 'syn.c', 'syn-att.c', 'syn-intel.c']:
+  project.sources += [os.path.join(Extension.sm_root, 'public', 'libudis86', smfile)]
 project.compiler.defines += ['HAVE_STRING_H']
 project.compiler.defines += ['VERSION_SAFE_STEAM_API_INTERFACES']
 
