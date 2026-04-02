@@ -70,9 +70,15 @@ CSymbolHelper g_SymbolHelper;
 
 DETOUR_DECL_MEMBER2(DetourFunc, bool, uint32_t*, adr, int, challenge)
 {
-    if(!g_bEnabled)
-        return DETOUR_MEMBER_CALL(DetourFunc)(adr, challenge);
-    
+    // Always call the original function first to preserve Steam internal
+    // functionality (heartbeat auth, master server listing, VAC).
+    bool originalResult = DETOUR_MEMBER_CALL(DetourFunc)(adr, challenge);
+
+    if(!g_bEnabled || originalResult)
+        return originalResult;
+
+    // Steam's own validation didn't handle it — check our custom challenge
+    // manager for A2S queries intercepted by the extension.
     netadr_s addr(*adr, 0);
     if(g_ChallengeManager.CheckChallenge(addr, challenge))
         return true;
